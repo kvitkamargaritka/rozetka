@@ -1,0 +1,14 @@
+{
+  "name": "test",
+  "version": "0.0.1",
+  "author": "Rita <rita.akhmadulina@gmail.com>",
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-less": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-cache": "*",
+    "gulp-livereload": "*",
+    "gulp-imagemin": "*",
+    "tiny-lr": "*"
+  }
+}

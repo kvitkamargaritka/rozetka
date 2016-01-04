@@ -1,0 +1,110 @@
+.item {
+  height: 415px;
+  border: 1px solid #eaeaea;
+  border-left: none;
+  border-bottom: none;
+  box-sizing: border-box;
+  padding: 5px;
+
+  &__top {
+
+  }
+
+  &__bottom {
+
+    &-available {
+      margin-bottom: 10px;
+    }
+
+    &-descr {
+      margin-bottom: 18px;
+    }
+
+    &-price {
+      margin: 13px 10px 20px 0;
+    }
+
+  }
+
+  &__img {
+    position: relative;
+    display: block;
+    text-align: center;
+  }
+
+  &__badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__name {
+    color: @textColorBlue;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+
+    &:hover {
+      color: red;
+      text-decoration: underline;
+    }
+  }
+
+  &__price {
+    background: #fff3b5;
+    vertical-align: middle;
+    padding: 7px 7px;
+    margin-top: 10px;
+    border-radius: 4px;
+    color: #000;
+    font-size: 16px;
+
+    small {
+      font-size: 12px;
+      margin-left: -2px;
+    }
+
+    &_sold {
+      background: #eee;
+      color: #999;
+    }
+
+    &_limited {
+      background: #ffce3c;
+      border-bottom: 1px solid #ffbf01;
+    }
+  }
+
+  &__reviews {
+    color: @textColorBlue;
+    text-decoration: none;
+    font-size: 11px;
+    padding-left: 10px;
+
+    &:hover {
+      color: red;
+      text-decoration: underline;
+    }
+  }
+
+  &__available {
+    font-weight: bold;
+    font-size: 12px;
+
+    &_sold {
+      color: #000;
+    }
+
+    &_limited {
+      color: #fe6600;
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    top: 3px;
+    left: 5px;
+  }
+}

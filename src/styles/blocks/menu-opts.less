@@ -1,0 +1,37 @@
+.menu-opts {
+
+  &__list {
+  }
+
+  &__el {
+    display: inline-block;
+    margin-right: 6px;
+    margin-top: 3px;
+
+    &_block {
+      display: block;
+    }
+  }
+
+  &__link {
+    color: @textColorBlue;
+    text-decoration: none;
+
+    &:hover {
+      color: red;
+      text-decoration: underline;
+    }
+
+    &_dotted {
+      border-bottom: 1px dotted;
+
+      &:hover {
+        text-decoration: none;
+
+        .icon-arrow-bottom {
+          background: url("img/sprite.png") 0 -9678px;
+        }
+      }
+    }
+  }
+}

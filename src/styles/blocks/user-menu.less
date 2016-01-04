@@ -1,0 +1,28 @@
+.user-menu {
+
+  &__hello {
+    margin-right: 0;
+  }
+
+  &__login {
+
+    &:hover {
+
+      .icon-men {
+        background: url("img/sprite.png") 0 -5242px;
+      }
+
+      .user-menu {
+
+        &__text {
+          color: red;
+        }
+      }
+    }
+  }
+
+  &__text {
+    color: @textColorBlue;
+    border-bottom: 1px dotted;
+  }
+}

@@ -1,0 +1,45 @@
+.feedback {
+  padding: 15px 10px;
+  border-bottom: 1px solid #eaeaea;
+  border-right: 1px solid #eaeaea;
+
+  &__top {
+    margin: 0 0 10px;
+  }
+  &__left,
+  &__right {
+    float: left;
+  }
+  &__left {
+    width: 25%;
+    text-align: center;
+  }
+  &__right {
+    width: 75%;
+  }
+
+  &__question {
+    display: inline-block;
+    margin: 8px 0;
+    background: #c3f9bd;
+    color: #ffffff;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 50%;
+  }
+
+  &__text {
+    width: 80%;
+    font-weight: bold;
+  }
+
+  &__dotted {
+    color: @textColorBlue;
+    cursor: pointer;
+    border-bottom: 1px dotted;
+
+    &:hover {
+      color: @textColorRed;
+    }
+  }
+}

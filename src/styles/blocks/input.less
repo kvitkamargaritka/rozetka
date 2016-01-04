@@ -1,0 +1,73 @@
+.input {
+
+  &__el {
+    height: 30px;
+    padding: 0 108px;
+    box-shadow: inset 2px 2px 0 1px #f2f2f3;
+    //font: 400 14px/2em @regularFont;
+    font-size: 14px;
+    color: #000;
+    border-radius: 3px;
+    border: 1px solid #DDDDE0;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &_search {
+    position: relative;
+    border-radius: 3px;
+    border: 1px solid transparent;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      width: 20px;
+      height: 19px;
+      background: url("img/sprite.png") no-repeat 0 -9646px;
+    }
+
+    &:hover {
+      border: 1px solid #74D36B;
+
+    }
+
+    .input {
+
+      &__el {
+        padding-left: 32px;
+      }
+    }
+  }
+}
+
+.checkbox {
+  padding: 5px;
+  color: #000;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #FCFCEE;
+    color: red;
+  }
+
+  &__label {
+    position: relative;
+    .clearfix();
+    padding-left: 20px;
+    cursor: pointer;
+  }
+
+  &__el {
+    position: absolute;
+    top: 1px;
+    left: 0;
+  }
+
+  &__quantity {
+    color: #999;
+  }
+}

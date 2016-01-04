@@ -1,0 +1,39 @@
+.city-choice {
+  border-left: 1px solid #eaeaea;
+  border-right: 1px solid #eaeaea;
+  padding: 7px 15px;
+  margin-right: 10px;
+
+  &__title {
+    font-size: 11px;
+    margin-bottom: 3px;
+    padding-right: 15px;
+  }
+
+  &__el {
+    display: inline-block;
+    font-weight: bold;
+    color: @textColorBlue;
+    cursor: pointer;
+
+    &:hover {
+
+      .city-choice {
+
+        &__text {
+          color: red;
+          border-bottom: 1px dotted;
+        }
+      }
+      .icon-arrow-bottom {
+        background: url("img/sprite.png") 0 -9678px;
+      }
+    }
+  }
+
+  &__text {
+    border-bottom: 1px dotted;
+    font-size: 14px;
+  }
+}
+

@@ -1,0 +1,28 @@
+.clearfix {
+  display: block;
+  zoom: 1;
+
+  &:after {
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+
+.href(@color: @linkColor, @colorHover: @linkColorHover, @colorActive: @linkColorActive, @colorVisited: @linkColorVisited){
+  &:visited{
+    color: @colorVisited;
+  }
+  &:link{
+    color: @color;
+  }
+  &:hover{
+    color: @colorHover;
+  }
+  &:active{
+    color: @colorActive;
+  }
+}

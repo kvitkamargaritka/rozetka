@@ -1,0 +1,65 @@
+.popular-item {
+  border-bottom: 1px solid #eaeaea;
+  border-right: 1px solid #eaeaea;
+  padding: 20px 10px;
+
+  &__link {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__counter {
+    color: #ffffff;
+    font-size: 23px;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    top: -93px;
+    right: -24px;
+
+    &-1 {
+      background-color: @textColorRed;
+    }
+
+    &-2 {
+      background-color: #fb5e3f;
+    }
+
+    &-3 {
+      background-color: #fb743f;
+    }
+
+    &-4 {
+      background-color: #fb8a3f;
+    }
+
+    &-5 {
+      background-color: #fba03f;
+    }
+  }
+
+
+  &__price {
+    background: #fff3b5;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 6px 6px;
+    margin-top: 10px;
+    border-radius: 4px;
+    color: #000;
+    font-size: 15px;
+  }
+
+  &__icon {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    top: 8px;
+    left: 2px;
+  }
+}

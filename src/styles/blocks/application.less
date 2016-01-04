@@ -1,0 +1,43 @@
+.application {
+
+  &__list {
+    .clearfix();
+  }
+
+  &__el {
+    float: left;
+    margin: 0 5px 5px 0;
+
+    &:hover {
+      .icon-appstore {
+        background: url("img/sprite.png") 0 -5343px;
+      }
+
+      .icon-googleplay {
+        background: url("img/sprite.png") 0 -5419px;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    height: 34px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &_mobile {
+      border: 1px solid #dadade;
+      border-radius: 3px;
+      padding: 3px 10px 7px;
+      box-sizing: border-box;
+
+      .icon-mobile {
+        top: 3px;
+        margin-right: 5px;
+      }
+    }
+  }
+}

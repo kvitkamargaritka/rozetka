@@ -1,0 +1,46 @@
+.bread-crumbs {
+  border-bottom: 1px solid #eaeaea;
+  border-right: 1px solid #eaeaea;
+  margin-top: 10px;
+
+  &__list {
+  }
+
+  &__el {
+
+    &_left {
+      padding-left: 5px;
+    }
+
+    &_left2 {
+      padding-left: 10px;
+    }
+  }
+
+  &__title {
+    float: left;
+    color: @textColorBlue;
+    cursor: pointer;
+    padding-right: 5px;
+    margin-bottom: 15px;
+
+    &:hover {
+      color: red;
+
+      .icon-arrow-less {
+        background: url("img/sprite.png") 0 -970px;
+      }
+    }
+
+    &_active {
+      color: #000;
+      font-weight: bold;
+      cursor: default;
+      padding-left: 12px;
+
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+}

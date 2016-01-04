@@ -1,0 +1,46 @@
+.item-opt {
+  padding-left: 12px;
+  
+  &__list{
+
+  }
+
+  &__el {
+    display: inline-block;
+    padding: 5px 15px;
+    border: 1px solid transparent;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+
+      border: 1px solid #f89a99;
+      border-radius: 3px;
+
+      .item-opt {
+
+        &__name {
+          color: red;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &__name {
+    text-align: center;
+    font-size: 11px;
+    color: @textColorBlue;
+
+    &:hover {
+    }
+
+    &_dotted {
+      border-bottom: 1px dotted;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
